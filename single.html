@@ -1,0 +1,340 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Lookshop Bootstarp Website Template | Single :: w3layouts</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Oxygen:300,400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.easydropdown.js"></script>
+<link rel="stylesheet" href="css/etalage.css">
+<script src="js/jquery.etalage.min.js"></script>
+<script>
+			jQuery(document).ready(function($){
+
+				$('#etalage').etalage({
+					thumb_image_width: 300,
+					thumb_image_height: 400,
+					source_image_width: 900,
+					source_image_height: 1200,
+					show_hint: true,
+					click_callback: function(image_anchor, instance_id){
+						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+					}
+				});
+
+			});
+		</script>
+<!--initiate accordion-->
+<script type="text/javascript">
+	$(function() {
+	
+	    var menu_ul = $('.menu > li > ul'),
+	           menu_a  = $('.menu > li > a');
+	    
+	    menu_ul.hide();
+	
+	    menu_a.click(function(e) {
+	        e.preventDefault();
+	        if(!$(this).hasClass('active')) {
+	            menu_a.removeClass('active');
+	            menu_ul.filter(':visible').slideUp('normal');
+	            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+	        } else {
+	            $(this).removeClass('active');
+	            $(this).next().stop(true,true).slideUp('normal');
+	        }
+	    });
+	
+	});
+</script>
+</head>
+<body>
+<div class="header">
+  <div class="header_top">
+    <div class="container">
+      <div class="header_top_right">
+	  	<div class="lang_list"></div>
+	  	<!-- start search-->
+			<div class="search-box">
+			   <div id="sb-search" class="sb-search">
+				  <form>
+					 <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+					 <input class="sb-search-submit" type="submit" value="">
+					 <span class="sb-icon-search"> </span>
+				  </form>
+		      </div>
+	    </div>
+			 <!----search-scripts---->
+			 <script src="js/classie.js"></script>
+			 <script src="js/uisearch.js"></script>
+			   <script>
+				 new UISearch( document.getElementById( 'sb-search' ) );
+			   </script>
+				<!----//search-scripts---->
+	            <div class="clearfix"> </div>
+	  </div>
+	  <div class="clearfix"> </div>
+	</div>
+  </div>
+  <div class="header_bottom">
+	<div class="container">	 			
+		<div class="logo"><img src="images/logo2.png" width="130" height="37"  alt=""/></div>	
+		<div class="header_bottom_right">			
+	        <div class="h_menu4"><!-- start h_menu4 -->
+				<a class="toggleMenu" href="#">Menu</a>
+				<ul class="nav">
+					<li class="active"></li>
+					<li></li>
+					<li><a href="products.html">Women</a>
+						<ul>
+							<li><a href="products.html">Big Size</a></li>
+							<li><a href="products_women_muslim.html">Muslim</a></li>                       
+                            <li><a href="products.html">Butik</a></li>
+						</ul>
+					</li>
+					<li><a href="products.html">Men</a>
+						<ul>
+							<li><a href="products.html">Big Size</a></li>
+							<li><a href="products.html">Muslim</a></li>
+                            <li><a href="products_men_distro.html">Distro</a></li>
+					  </ul>
+                      </li>
+					<li><a href="products.html">Kids</a>
+						<ul>
+							<li><a href="products_kids_man.html">Boy</a></li>
+							<li><a href="products.html">Girl</a></li>
+                        <ul>
+				  </li>
+					<li></li>
+				</ul>
+				<script type="text/javascript" src="js/nav.js"></script>
+	      </div><!-- end h_menu4 -->
+	      <div class="clearfix"></div>		   
+      </div>
+    </div>
+  </div>
+</div>
+<ul class="breadcrumbs">
+ <div class="container">
+     <li class="home">
+        <a href="index.html" title="Go to Home Page"><img src="images/home.png" alt=""/></a>&nbsp;
+       &nbsp; <span>&gt;</span>
+     </li>
+     <li class="home">&nbsp;
+         Women&nbsp;&nbsp;
+         <span>&gt;</span>
+     </li>
+     <li class="home">
+         &nbsp;Muslim&nbsp;&nbsp;
+         <span>&gt;</span>
+     </li>
+     <li class="home"><span class="red">&nbsp;Karita Moslem Square&nbsp;&nbsp;</span>
+     </li>
+  </div>
+</ul>
+<div class="single_top">
+  <div class="container"> 
+	      <div class="single_grid">
+				<div class="grid images_3_of_2">
+						<ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/h5_1.jpg" class="img-responsive" />
+									<img class="etalage_source_image" src="images/h5_1.jpg" class="img-responsive" title="" />
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/h5_2.jpg" class="img-responsive" />
+								<img class="etalage_source_image" src="images/h5_2.jpg" class="img-responsive" title="" />
+							</li>
+							<li>
+								<img class="etalage_thumb_image" src="images/h5_3.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="images/h5_3.jpg"class="img-responsive"  />
+							</li>
+						    <li>
+								<img class="etalage_thumb_image" src="images/h5_4.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="images/h5_4.jpg"class="img-responsive"  />
+							</li>
+						</ul>
+						 <div class="clearfix"></div>		
+		    </div> 
+				  <div class="desc1 span_3_of_2">
+				  	<ul class="back">
+                	  <li><i class="back_arrow"> </i>Back to <a href="index.html">Women's Muslim</a></li>
+                    </ul>
+					<h1>Karita Moslem Square</h1>
+					<ul class="price_single">
+					  <li class="head_desc"><a href="#">12 ratings</a><img src="images/review.png" alt=""/></li>
+					  <div class="clearfix"></div>
+					</ul>
+					<p>Karita Moslem Square merupakan cabang outlet fashion muslim dari Yogyakarta. Di sini menyediakan aneka macam perlengkapan muslim muda dan aksesoris Islami. Toko Karita terdiri dari 3 lantai yang memiliki nuansa ekslusif. Ada stand busana laki, stand mukena, stand sajadah, stand buku, lukis dan kaset serta stand jilbab. Ukuran yang disediakan juga lengkap mulai dari yang kecil hingga Big Size. Selain layanan khusus butik, Karita juga melayani penukaran produk untuk kategori ukuran, penukaran dilayani hingga 3 hari setelah pembelian dengan membawa copy nota dan label produk belum dilepas. Selain itu Karita juga menyediakan layanan hantaran mahar dan parcel lebaran. Berlokasi di Jalan Ngagel Jaya Selatan, sederet dengan Kampus UBAYA atau deseberang Glory Bakery cabang Ngagel. Toko Karita akan tampak semakin ramai pada hari-hari libur. Rata-rata pengunjung adalah remaja dan ibu-ibu.<br>
+					</p>
+				     <div class="dropdown_top">
+				       <div class="dropdown_left"></div>
+			            <ul class="color_list">
+							<li><a href="#"> <span class="color1"> </span></a></li>
+							<li><a href="#"> <span class="color2"> </span></a></li>
+							<li><a href="#"> <span class="color3"> </span></a></li>
+							<li><a href="#"> <span class="color4"> </span></a></li>
+							<li><a href="#"> <span class="color5"> </span></a></li>
+						</ul>
+						 <div class="clearfix"></div>
+		            </div>
+			    </div>
+          	    <div class="clearfix"></div>
+    </div>
+    <div class="single_social_top">   
+          	  <ul class="single_social">
+				  <li><a href="#"> <i class="s_fb"> </i> <div class="social_desc">Share<br> on facebook</div><div class="clearfix"> </div></a></li>
+				  <li><a href="#"> <i class="s_pin"> </i> <div class="social_desc">Pin<br> this product</div><div class="clearfix"> </div></a></li>
+				  <li><a href="#"> <i class="s_twt"> </i><div class="social_desc">Tweet<br> this product</div><div class="clearfix"> </div></a></li>
+				  <li class="last"><a href="#"> <i class="s_email"> </i><div class="social_desc">Email<br> a Friend</div><div class="clearfix"> </div></a></li>
+			  </ul>
+		  </div>
+		  <ul class="menu">
+			 <li class="item1"><a href="#"><img src="images/product_arrow.png">Description</a>
+				 <ul>
+					 <li class="subitem1"><a href="#"><strong>Karita Moslem Square</strong><br>
+						    <strong>Karita Surabaya</strong></a></li>
+					 <li class="subitem2"><a href="#">Jl. Ngagel Jaya Selatan 129-131, Surabaya,<br>
+Telp. (031) 5013213, 5017131, 5017033<br>
+Fax. (031) 5011675<span id="more-"> </span></a></li>
+					 <li class="subitem3"><a href="#">FB. Karita Squere<br>
+Web: http://www.karita-indonesia.com/</a></li>
+			     </ul>
+		     </li>
+			 <li class="item3"><a href="#"><img src="images/product_arrow.png">Reviews (3)</a>
+				 <ul>
+					 <li class="subitem1"><a href="#">Tempatnya sih cozy cuman kalau utk pilihan koko cowo' &amp; kaos oblongnya mending di Rabbani deh, tambahin donk pasti banyak yg minat</a></li>
+					 <li class="subitem2"><a href="#">Looking For Moeslem Shirt and Dress , This is the right places...</a></li>
+					 <li class="subitem3"><a href="#">Good place for such a big Moslem like us :)</a></li>
+       		   </ul>
+		     </li>
+ 		 </ul>
+   </div>
+   <div class="m_4"><span class="left_line2"> </span><p>Related Store</p><span class="right_line2"> </span></div>
+	<div class="content_bottom">
+          	<div class="container">
+          		<ul class="grid1">
+          		  <li>
+					<div class="view view-first">
+					  <img src="images/h4.jpg" class="img-responsive" alt="">
+					  <div class="tab_desc">
+			             <h3><a href="#">RABBANI</a></h3>
+					    <p>&nbsp;</p>
+						 <a href="#" class="btn1 btn-primary1"><span>READ MORE</span><img src="images/plus.png" alt=""></a>
+					  </div>
+					</div>
+				  </li>
+				  <li>
+					<div class="view view-first">
+					  <img src="images/h12.jpg" class="img-responsive" alt="">
+					  <div class="tab_desc">
+			             <h3><a href="#">ZOYA</a></h3>
+						 <p>&nbsp;</p>
+						 <a href="#" class="btn1 btn-primary1"><span>READ MORE</span><img src="images/plus.png" alt=""></a>
+					  </div>
+				  <li>
+					<div class="view view-first">
+					  <img src="images/h13.jpg" class="img-responsive" alt="">
+					  <div class="tab_desc">
+			             <h3><a href="#">ELZATTA</a></h3>
+					    <p>&nbsp;</p>
+						 <a href="#" class="btn1 btn-primary1"><span>READ MORE</span><img src="images/plus.png" alt=""></a>
+					  </div>
+					</div>
+				  </li>
+				  <li class="grid1_last">
+					<div class="view view-first">
+					  <img src="images/h7.jpg" class="img-responsive" alt="">
+					  <div class="tab_desc">
+			             <h3><a href="#">DIAN PELANGI BOUTIQUE</a></h3>
+					    <p>&nbsp;</p>
+						 <a href="#" class="btn1 btn-primary1"><span>READ MORE</span><img src="images/plus.png" alt=""></a>
+					  </div>
+					</div>
+				  </li>
+				  <div class="clearfix"> </div>
+				</ul>
+          	</div>
+          </div>
+      </div>
+      <div class="grid-2">
+       	<div class="container">
+       		<p>&nbsp;</p>
+       	</div>
+       </div>
+       <div class="footer_top">
+       	<div class="container">
+   		  <div class="col-sm-2 grid-3">
+   			<h3>Customer Service</h3>
+   			  <ul class="footer_list">
+   				  <li><a href="contact.html">Contact</a></li>
+   				  <li><a href="#">FAQ</a></li>
+   			  </ul>
+       		</div>
+   		  <div class="col-sm-2 grid-3">
+   			<h3>Information</h3>
+       			<ul class="footer_list">
+       				<li><a href="#">About Us</a></li>
+       				<li><a href="#">Investor relations</a></li>
+       			</ul>
+       		</div>
+       		<div class="col-sm-2 grid-3">
+   			  <h3>Stores</h3>
+       			<ul class="footer_list">
+       				<li><a href="#">Paris</a></li>
+       				<li><a href="#">New York</a></li>
+       				<li><a href="#">London</a></li>
+       				<li><a href="#">Madrid</a></li>
+       				<li><a href="#">Tokio</a></li>
+       			</ul>
+   		  </div>
+       		<div class="col-sm-2 grid-3">
+       			<h3>Social</h3>
+       			<ul class="footer_social">
+				  <li><a href="#"> <i class="tw1"> </i> </a></li>
+				  <li><a href="#"> <i class="db1"> </i> </a></li>
+				  <li><a href="#"> <i class="fb1"> </i></a></li>
+				  <li><a href="#"> <i class="g1"> </i></a></li>
+				  <li><a href="#"> <i class="thumb"> </i></a></li>
+				  <li><a href="#"> <i class="vimeo"> </i></a></li>
+				</ul>
+       		</div>
+       		<div class="col-sm-2">
+       			<img src="images/secure.png" alt=""/>
+       		</div>
+       	</div>
+       </div>
+       <div class="footer_bottom">
+       	<div class="container">
+       		<div class="cssmenu">
+				<ul>
+					<li class="active"><a href="login.html">Privacy & Cookies</a></li> 
+					||
+					<li><a href="checkout.html">Terms & Conditions</a></li>
+					 |||
+				     <li><a href="register.html">About Us</a></li>
+				</ul>
+			</div>
+			<div class="copy">
+			    <p>&copy; 2015<a href="http://w3layouts.com" target="_blank"></a></p>
+		    </div>
+		    <div class="clearfix"> </div>
+       	</div>
+       </div>
+</body>
+</html>		
